@@ -1,4 +1,4 @@
-name: clima
+name: damn_weather
 description: A new Flutter application.
 
 version: 1.0.0+1
@@ -17,6 +17,7 @@ dev_dependencies:
     sdk: flutter
   geolocator:
   http:
+  flutter_spinkit:
 
 flutter:
   uses-material-design: true

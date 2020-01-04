@@ -1,5 +1,5 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:damn_weather/screens/loading_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: LoadingScreen(),
+      home: Scaffold(
+        body: SafeArea(
+          child: Text(test()),
+        ),
+      ),
     );
   }
+}
+
+String test() {
+  return 'Working';
 }
